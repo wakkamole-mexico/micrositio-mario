@@ -5,7 +5,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Juguetron - Super Mario Lego</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Blinker">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <style>
+      @keyframes animatedBackground {
+        from { background-position: 100% 0; }
+        to { background-position: 0 0; }
+      }
+      @-webkit-keyframes animatedBackground {
+        from { background-position: 100% 0; }
+        to { background-position: 0 0; }
+      }
+      @-ms-keyframes animatedBackground {
+        from { background-position: 100% 0; }
+        to { background-position: 0 0; }
+      }
+      @-moz-keyframes animatedBackground {
+        from { background-position: 100% 0; }
+        to { background-position: 0 0; }
+      }
+      .animate-area	{
+        background-image: url(/sitio/img/nubes.png);
+        background-size: 70%;
+        background-position: 0px 0px;
+        background-repeat: repeat;
+        animation: animatedBackground 20s linear infinite;
+        -ms-animation: animatedBackground 20s linear infinite;
+        -moz-animation: animatedBackground 20s linear infinite;
+        -webkit-animation: animatedBackground 20s linear infinite;
+      }
+      @keyframes animatedMario {
+        from { bottom: 0; left: 2%; }
+        5% {
+          bottom: 18%; left: 2%;
+        }
+        10%{
+          bottom: 22%; left: 10%;
+        }
+        20%{
+          bottom: 0%; left: 20%;
+        }
+        30%{
+          bottom: 10%; left: 30%;
+        }
+        40%{
+          bottom: 0%; left: 40%;
+        }
+        50%{
+          bottom: 10%; left: 50%;
+        }
+        60%{
+          bottom: 0; left: 60%;
+        }
+        70%{
+          bottom: 20%; left: 70%;
+        }
+        80%{
+          bottom: 0; left: 80%;
+        }
+        90%{
+          bottom: 10%; left: 90%;
+        }
+        95%{
+          bottom: 3%; left: 95%;
+        }
+        to { bottom: 5%; left: 100%; }
+      }
+      @-webkit-keyframes animatedMario {
+        from { bottom: 0; left: 2%; }
+        5% {
+          bottom: 18%; left: 2%;
+        }
+        10%{
+          bottom: 22%; left: 10%;
+        }
+        20%{
+          bottom: 0%; left: 20%;
+        }
+        30%{
+          bottom: 10%; left: 30%;
+        }
+        40%{
+          bottom: 0%; left: 40%;
+        }
+        50%{
+          bottom: 10%; left: 50%;
+        }
+        60%{
+          bottom: 0; left: 60%;
+        }
+        70%{
+          bottom: 20%; left: 70%;
+        }
+        80%{
+          bottom: 0; left: 80%;
+        }
+        90%{
+          bottom: 10%; left: 90%;
+        }
+        95%{
+          bottom: 3%; left: 95%;
+        }
+        to { bottom: 5%; left: 100%; }
+      }
+      @-ms-keyframes animatedMario {
+        from { bottom: 0; left: 2%; }
+        5% {
+          bottom: 18%; left: 2%;
+        }
+        10%{
+          bottom: 22%; left: 10%;
+        }
+        20%{
+          bottom: 0%; left: 20%;
+        }
+        30%{
+          bottom: 10%; left: 30%;
+        }
+        40%{
+          bottom: 0%; left: 40%;
+        }
+        50%{
+          bottom: 10%; left: 50%;
+        }
+        60%{
+          bottom: 0; left: 60%;
+        }
+        70%{
+          bottom: 20%; left: 70%;
+        }
+        80%{
+          bottom: 0; left: 80%;
+        }
+        90%{
+          bottom: 10%; left: 90%;
+        }
+        95%{
+          bottom: 3%; left: 95%;
+        }
+        to { bottom: 5%; left: 100%; }
+      }
+      @-moz-keyframes animatedMario {
+        from { bottom: 0; left: 2%; }
+        5% {
+          bottom: 18%; left: 2%;
+        }
+        10%{
+          bottom: 22%; left: 10%;
+        }
+        20%{
+          bottom: 0%; left: 20%;
+        }
+        30%{
+          bottom: 10%; left: 30%;
+        }
+        40%{
+          bottom: 0%; left: 40%;
+        }
+        50%{
+          bottom: 10%; left: 50%;
+        }
+        60%{
+          bottom: 0; left: 60%;
+        }
+        70%{
+          bottom: 20%; left: 70%;
+        }
+        80%{
+          bottom: 0; left: 80%;
+        }
+        90%{
+          bottom: 10%; left: 90%;
+        }
+        95%{
+          bottom: 3%; left: 95%;
+        }
+        to { bottom: 5%; left: 100%; }
+      }
+      .animated-mario{
+        z-index: 1;
+          position: absolute !important;
+          animation: animatedMario 10s linear infinite;
+          -ms-animation: animatedMario 10s linear infinite;
+          -moz-animation: animatedMario 10s linear infinite;
+          -webkit-animation: animatedMario 10s linear infinite;
+
+      }
+    </style>
   </head>
   <body>
     <noscript>
